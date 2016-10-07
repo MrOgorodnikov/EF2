@@ -14,5 +14,10 @@ namespace EF2
         public string Name { get; set; }
 
         public ICollection<Player> Players { get; set; }
+
+        public Team()
+        {
+            Players = new List<Player>();
+        }
     }
 }
